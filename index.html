@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form | Project freeCodeCamp</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Survey Form</h1>
+          <p id="description" class="description text-center">
+           Feel free to fill this Survey form...
+          </p>
+        </header>
+      
+        <form id="survey-form">
+      
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name here"
+              required
+            />
+          </div>
+      
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your email here"
+              required
+            />
+          </div>
+      
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Contact number</label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="20"
+              class="form-control"
+              placeholder="Contact number"
+            />
+          </div>
+      
+      <div class="form-group">
+            <p>What's you Gender ?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="Male"
+                type="radio"
+                class="input-radio"
+                checked
+              />Definitely</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="Female"
+                type="radio"
+                class="input-radio"
+              />Maybe</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="Other"
+                type="radio"
+                class="input-radio"
+              />Not sure</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>What you do currently ?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Part Time Job</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+      
+          
+       
+      
+          <div class="form-group">
+            <p>
+              What would you like to see improved in Codepen.io ?
+            
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="Projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Front-end Projects</label
+              >
+            <label
+              ><input
+                name="prefer"
+                value="Challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />Challenges</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="open-source-community"
+                type="checkbox"
+                class="input-checkbox"
+              />Open Source Community</label
+            >
+          
+            <label
+              ><input
+                name="prefer"
+                value="Videos"
+                type="checkbox"
+                class="input-checkbox"
+              />Videos</label
+            >
+          
+            <label
+              ><input
+                name="prefer"
+                value="Wikipedia"
+                type="checkbox"
+                class="input-checkbox"
+              />Wiki</label
+            >
+          
+          </div>
+      
+          <div class="form-group">
+            <p>Comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment ..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      
+</body>
+</html>
+
